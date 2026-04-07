@@ -47,9 +47,9 @@ export default function Home() {
               {t('hero_subtitle')}
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
-              <Link to="/contact" className="btn-primary">
+              <a href="https://intensiva.com.br/projetos/waterland/contact/" target="_blank" rel="noopener noreferrer" className="btn-primary">
                 {t('cta_estimate')}
-              </Link>
+              </a>
               <Link to="/" className="btn-secondary border-white text-white hover:bg-white hover:text-brand-dark">
                 {t('nav_services')}
               </Link>
@@ -184,9 +184,9 @@ export default function Home() {
             <div className="bg-white/5 backdrop-blur-lg p-12 rounded-3xl border border-white/10 text-center space-y-6">
               <h3 className="text-3xl font-bold">{t('home_ready_title')}</h3>
               <p className="text-slate-300">{t('home_ready_subtitle')}</p>
-              <Link to="/contact" className="btn-primary inline-block w-full">
+              <a href="https://intensiva.com.br/projetos/waterland/contact/" target="_blank" rel="noopener noreferrer" className="btn-primary inline-block w-full">
                 {t('cta_schedule')}
-              </Link>
+              </a>
             </div>
           </div>
         </div>

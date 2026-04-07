@@ -36,9 +36,9 @@ export default function ServiceDetail({ title, subtitle, description, included, 
                 <p className="text-slate-600 leading-relaxed text-lg">
                   {description}
                 </p>
-                <Link to="/contact" className="btn-primary inline-block">
+                <a href="https://intensiva.com.br/projetos/waterland/contact/" target="_blank" rel="noopener noreferrer" className="btn-primary inline-block">
                   {t('cta_estimate')}
-                </Link>
+                </a>
               </div>
 
               <div className="space-y-6">
