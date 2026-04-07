@@ -67,7 +67,7 @@ export default function Services() {
       title: t('service_automation_title'),
       icon: <img src="https://i.postimg.cc/QxDrgCMQ/pool-automation.png" alt="Logo" className="w-[100px] h-[100px] object-contain mix-blend-multiply" referrerPolicy="no-referrer" />,
       desc: t('service_automation_desc'),
-      externalLink: 'https://intensiva.com.br/projetos/waterland/pool-automation-control-systems/'
+      externalLink: 'https://intensiva.com.br/projetos/waterland/pool-automation-control-systems'
     }
   ];
 
@@ -101,6 +101,8 @@ export default function Services() {
                 {service.externalLink ? (
                   <a 
                     href={service.externalLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center font-bold text-brand-light hover:underline"
                   >
                     {t('cta_view_details')} <ChevronRight size={20} />

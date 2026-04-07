@@ -10,10 +10,31 @@ export default function Home() {
   const { t } = useLanguage();
 
   const services = [
-    { title: t('service_leak_title'), icon: <Droplets />, priority: true, path: '/services/leak-detection' },
-    { title: t('service_cleaning_title'), icon: <ShieldCheck />, path: '/services/cleaning' },
-    { title: t('service_renovations_title'), icon: <Users />, path: '/services/renovations' },
-    { title: t('service_equipment_title'), icon: <Clock />, path: '/services/equipment' },
+    { 
+      title: t('service_leak_title'), 
+      icon: <Droplets />, 
+      priority: true, 
+      path: '/services/leak-detection',
+      externalLink: 'https://intensiva.com.br/projetos/waterland/pool-leak-detection/'
+    },
+    { 
+      title: t('service_cleaning_title'), 
+      icon: <ShieldCheck />, 
+      path: '/services/cleaning',
+      externalLink: 'https://intensiva.com.br/projetos/waterland/pool-cleaning-maintenance/'
+    },
+    { 
+      title: t('service_renovations_title'), 
+      icon: <Users />, 
+      path: '/services/renovations',
+      externalLink: 'https://intensiva.com.br/projetos/waterland/pool-deck-renovation/'
+    },
+    { 
+      title: t('service_equipment_title'), 
+      icon: <Clock />, 
+      path: '/services/equipment',
+      externalLink: 'https://intensiva.com.br/projetos/waterland/equipment-repair-installation/'
+    },
   ];
 
   return (
@@ -124,9 +145,20 @@ export default function Home() {
                   {service.icon}
                 </div>
                 <h3 className="text-xl font-bold text-brand-dark mb-4">{service.title}</h3>
-                <Link to={service.path} className="text-brand-light font-semibold text-sm hover:underline flex items-center">
-                  {t('cta_view_details')} <ChevronRight size={16} />
-                </Link>
+                {service.externalLink ? (
+                  <a 
+                    href={service.externalLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-brand-light font-semibold text-sm hover:underline flex items-center"
+                  >
+                    {t('cta_view_details')} <ChevronRight size={16} />
+                  </a>
+                ) : (
+                  <Link to={service.path} className="text-brand-light font-semibold text-sm hover:underline flex items-center">
+                    {t('cta_view_details')} <ChevronRight size={16} />
+                  </Link>
+                )}
               </motion.div>
             ))}
           </div>
