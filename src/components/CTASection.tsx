@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 
 export default function CTASection() {
@@ -30,12 +29,12 @@ export default function CTASection() {
         <p className="text-xl text-slate-200 max-w-2xl mx-auto font-medium">
           {t('home_ready_subtitle')}
         </p>
-        <Link 
-          to="/contact" 
+        <a 
+          href="https://intensiva.com.br/projetos/waterland/contact/" 
           className="inline-block bg-brand-light hover:bg-brand-light/90 text-white px-10 py-4 rounded-2xl font-bold text-lg transition-all shadow-lg hover:shadow-brand-light/20 active:scale-95"
         >
           {t('cta_schedule')}
-        </Link>
+        </a>
       </div>
     </section>
   );

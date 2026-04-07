@@ -101,8 +101,6 @@ export default function Services() {
                 {service.externalLink ? (
                   <a 
                     href={service.externalLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="inline-flex items-center font-bold text-brand-light hover:underline"
                   >
                     {t('cta_view_details')} <ChevronRight size={20} />

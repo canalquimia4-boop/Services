@@ -33,7 +33,7 @@ export default function Footer() {
             <h4 className="text-lg font-bold mb-6">{t('footer_quick_links')}</h4>
             <ul className="space-y-3 text-slate-300 text-sm">
               <li><Link to="/home" className="hover:text-brand-light transition-colors">{t('nav_home')}</Link></li>
-              <li><Link to="/about" className="hover:text-brand-light transition-colors">{t('nav_about')}</Link></li>
+              <li><a href="https://intensiva.com.br/projetos/waterland/about-us/" className="hover:text-brand-light transition-colors">{t('nav_about')}</a></li>
               <li><Link to="/" className="hover:text-brand-light transition-colors">{t('nav_services')}</Link></li>
               <li><Link to="/portfolio" className="hover:text-brand-light transition-colors">{t('nav_portfolio')}</Link></li>
               <li><Link to="/testimonials" className="hover:text-brand-light transition-colors">{t('nav_testimonials')}</Link></li>
