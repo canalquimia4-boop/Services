@@ -155,7 +155,11 @@ export default function Home() {
                     {t('cta_view_details')} <ChevronRight size={16} />
                   </a>
                 ) : (
-                  <Link to={service.path} className="text-brand-light font-semibold text-sm hover:underline flex items-center">
+                  <Link 
+                    to={service.path} 
+                    target="_blank"
+                    className="text-brand-light font-semibold text-sm hover:underline flex items-center"
+                  >
                     {t('cta_view_details')} <ChevronRight size={16} />
                   </Link>
                 )}

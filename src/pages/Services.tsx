@@ -110,6 +110,7 @@ export default function Services() {
                 ) : (
                   <Link 
                     to={`/services/${service.id}`}
+                    target="_blank"
                     className="inline-flex items-center font-bold text-brand-light hover:underline"
                   >
                     {t('cta_view_details')} <ChevronRight size={20} />
